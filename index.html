@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Correction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="#">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password Here" oninput="return validate()">
+        <span id="checkeye"><i class="fa fa-eye" aria-hidden="true" id="eye-01" onclick="toggle1()"></i></span>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password Here">
+        <span id="checkeye"><i class="fa fa-eye" aria-hidden="true" id="eye-02" onclick="toggle2()"></i></span>
+
+        <p id="verification"></p>
+
+        <div id="validations">
+            <h2>Password Validation Method</h2>
+            <ul>
+                <li id="upper">Atleast <strong>one Uppercase</strong> letter included.</li>
+                <li id="lower">Atleast <strong>one Lowercase</strong> letter included.</li>
+                <li id="special-char">Atleast <strong>one Special symbol</strong> included.</li>
+                <li id="number">Atleast <strong>one Digit</strong> included.</li>
+                <li id="length">Password <strong>limit 6 to 15</strong> characters.</li>
+            </ul>
+        </div>
+
+        <input type="button" value="Submit" onclick="checkPassword()">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
