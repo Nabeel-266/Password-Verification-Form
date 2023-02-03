@@ -57,7 +57,6 @@ function checkPassword(){
 
 function validate(){
 
-    let pass = document.getElementById('password');
     let upper = document.getElementById('upper');
     let lower = document.getElementById('lower');
     let sp_char = document.getElementById('special-char');

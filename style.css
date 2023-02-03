@@ -13,14 +13,14 @@ body{
 }
 form{
     width: 400px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 40px 40px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 8px;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.10);
     border: 2px solid #707070;
 }
 label{
@@ -77,10 +77,10 @@ input[type="button"]{
     border-radius: 5px;
     width: 100%;
     margin-top: 25px;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     letter-spacing: 0.5px;
     font-weight: 600;
-    background-color: #649173;
+    background: linear-gradient( 90deg, #DBD5A4 20%, #649173 100%);
     transition: 0.2s;
     transform: scale(1);
 }
